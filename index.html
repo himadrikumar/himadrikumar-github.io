@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@200&display=swap" rel="stylesheet">
+    <title>Arcade Simulation</title>
+    <style>
+        h2 {
+            margin-top: 0;
+            margin-bottom: 0;
+            font-size: 30px
+        }
+
+        .title { background: white; height: 226px; width: 352px; position: absolute; top: 55%; left: -0.5%; padding: 10px 20px }
+
+        .title h1, .title h3 { margin: 5px }
+
+        .jumbotron { transition: all 255ms ease; height: 450px; width: 350px; border-radius: 30px; background: rgba(255, 255, 255, .1); display: inline-block; margin: 50px; position: relative; overflow: hidden; background-position: center }
+
+        input { width: 100px; margin: 0 5px 0 5px; padding: 5px; background: black; color: white; border-style: none; margin-top: 10px }
+
+        .jumbotron:hover { transform: scale(1.05) }
+    </style>
+</head>
+<body style="background: #16151E; font-family: 'Stick No Bills', sans-serif; position: relative; margin: 0; padding: 0;">
+    <!--<div class="char_description" style="background: white; position: absolute; right: 0px; padding: 10px; text-align: center; height: 100vh">
+        <input type="button" value="..." style="margin-top: -50px; margin-left: 200px; width: 50px; font-size: 40px; font_family: 'Stick No Bills', sans-serif; border-style: none; background: transparent;" onclick="margin-left: 200px"><br>
+        <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png" style="border-style: solid; color: #ad7a03;" height="100px" width="100px">
+        <h2>Name: {{ name }}</h2>
+        <h2>Money: {{ character_money }}</h2>
+        <h2>Level: {{ level }}</h2>
+    </div>-->
+    <h1 style="font-size: 5vw; color: white; margin-left: 35vw">Choose a game</h1>
+    <div style="display: flex; align-item: center; justify-content: center">
+        <div class="jumbotron" id="claw" style="background: url('https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/claw-machines-in-different-neon-colours-nano-calvo.jpg'); background-size: 200% 100%; background-position: center">
+            <div class="title">
+                <h1>Claw Machine</h1>
+                <h3>Coins needed: 1</h3>
+                <h3>Coins won: 5</h3>
+                <input type="button" class="play_btn" value="play">
+            </div>
+        </div>
+        <div class="jumbotron" id="whack" style="background: url('https://towerunite.com/images/community/devlog/072219/86ff4dda72e6cf5e5dc9e9fecca10b9d.jpg'); background-size: 100%;">
+            <div class="title">
+                <h1>Whack-a-mole</h1>
+                <h3>Coins needed: 2</h3>
+                <h3>Coins won: 7</h3>
+                <a href="/whack-a-mole"><input type="button" class="play_btn" value="play"></a>
+            </div>
+        </div>
+        <div class="jumbotron" id="claw2" style="background: url('https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/claw-machines-in-different-neon-colours-nano-calvo.jpg'); background-size: 200% 100%; background-position: center">
+            <div class="title">
+                <h1>Claw Machine</h1>
+                <h3>Coins needed: 1</h3>
+                <h3>Coins won: 5</h3>
+                <input type="button" class="play_btn" value="play">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
